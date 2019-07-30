@@ -1,0 +1,14 @@
+[user]
+	name = Dmytro Kyrychuk
+	email = dmytro@kyrych.uk
+[includeIf "gitdir:~/flowtale/"]
+	path = ~/flowtale/.gitconfig.inc
+
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[help]
+	autocorrect = 30
+[core]
+	excludesfile = /home/dmytro/.gitignore_global
