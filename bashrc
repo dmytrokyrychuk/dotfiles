@@ -119,3 +119,7 @@ fi
 # Local scripts
 export PATH=$PATH:$HOME/bin
 
+# PrivatSign paths
+export APB_HOME="/home/dmytro/PrivateSign"
+export APB_JAVA="/home/dmytro/PrivateSign/java/bin"
+export JAVA_OPTS="-Xms512m -Xmx1024m"
