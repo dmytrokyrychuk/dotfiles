@@ -118,6 +118,7 @@ fi
 
 # Local scripts
 export PATH=$PATH:$HOME/bin
+export PATH="$HOME/.poetry/bin:$PATH"
 
 # PrivatSign paths
 export APB_HOME="/home/dmytro/PrivateSign"
