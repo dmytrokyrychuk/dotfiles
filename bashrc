@@ -116,5 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Local scripts
 export PATH=$PATH:$HOME/bin
 
