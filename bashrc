@@ -123,3 +123,5 @@ export PATH=$PATH:$HOME/bin
 export APB_HOME="/home/dmytro/PrivateSign"
 export APB_JAVA="/home/dmytro/PrivateSign/java/bin"
 export JAVA_OPTS="-Xms512m -Xmx1024m"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
