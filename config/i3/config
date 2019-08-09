@@ -169,6 +169,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
+default_border pixel
+bindsym $mod+b border toggle
+
 # class                 border  backgr. text    indicator child_border
 client.focused          #f0544c #f0544c #ffffff #45db53   #f0544c
 client.focused_inactive #333333 #5f676a #ffffff #f5fc61   #5f676a
