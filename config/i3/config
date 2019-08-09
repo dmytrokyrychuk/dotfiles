@@ -137,6 +137,21 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+mode "media control" {
+        # This mode is necessary for me because I don't have dedicated media
+        # keys on my home keyboard and it I often need to use mouse to control
+        # volume or switch songs when the laptop lid is closed (and the
+        # laptop's media keys are unreachable).
+        bindsym m exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+        bindsym Up exec pactl set-sink-volume @DEFAULT_SINK@ +5% 
+        bindsym Down exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+m mode "media control"
+
 # Using xfce4-panel, so i3bar should not start.
 # # Start i3bar to display a workspace bar (plus the system information i3status
 # # finds out, if available)
