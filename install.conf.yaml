@@ -9,9 +9,6 @@
     ~/.config/i3:
         path: config/i3/
         create: true
-    ~/.config/i3status:
-        path: config/i3status/
-        create: true
     ~/.config/dunst:
         path: config/dunst/
         create: true
