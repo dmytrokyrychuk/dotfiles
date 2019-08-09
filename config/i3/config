@@ -178,6 +178,12 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #333333
 
+# #class (Numix)              border   background      text  
+# client.focused              #f0544c  #f0544c         #dedede
+# client.unfocused            #333333  #333333         #dedede
+# client.focused_inactive     #333333  #333333         #dedede
+# client.urgent               #383a3b  #383a3b         #ee0000
+
 # Fix issue when color picker appears as a tile. The Color Picker window does
 # not support scrolling, but it does not always fit into the tile. The window
 # must be moved to the cursor position; otherwise it may appear over a
