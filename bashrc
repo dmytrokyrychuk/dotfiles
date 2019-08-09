@@ -126,3 +126,9 @@ export APB_JAVA="/home/dmytro/PrivateSign/java/bin"
 export JAVA_OPTS="-Xms512m -Xmx1024m"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+if command -v direnv >/dev/null 2>&1; then
+  eval "$(direnv hook bash)"
+else
+  echo "Environment not loaded: direnv program not found"
+fi
