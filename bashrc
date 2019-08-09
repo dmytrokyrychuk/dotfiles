@@ -132,3 +132,6 @@ if command -v direnv >/dev/null 2>&1; then
 else
   echo "Environment not loaded: direnv program not found"
 fi
+
+# Only load Liquid Prompt in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && [ -f ~/liquidprompt/liquidprompt ] && source ~/liquidprompt/liquidprompt
