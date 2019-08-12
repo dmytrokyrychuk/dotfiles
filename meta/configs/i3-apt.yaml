@@ -1,0 +1,6 @@
+- aptget:
+  i3:
+  libi3ipc-glib:
+    ppa_source: ppa:aacebedo/libi3ipc-glib
+  xfce4-i3-workspaces-plugin:
+    ppa_source: ppa:aacebedo/xfce4-i3-workspaces-plugin
