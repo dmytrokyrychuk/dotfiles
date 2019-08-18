@@ -140,8 +140,8 @@ mode "media control" {
         # volume or switch songs when the laptop lid is closed (and the
         # laptop's media keys are unreachable).
         bindsym m exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-        bindsym Up exec pactl set-sink-volume @DEFAULT_SINK@ +5% 
-        bindsym Down exec pactl set-sink-volume @DEFAULT_SINK@ -5% 
+        bindsym Up exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+        bindsym Down exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
