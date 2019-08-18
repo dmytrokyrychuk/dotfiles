@@ -1,0 +1,4 @@
+- link:
+    ~/.config/i3:
+      path: config/i3-dkl2/
+      create: true

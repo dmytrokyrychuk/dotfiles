@@ -54,11 +54,10 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
-# split in horizontal orientation
-bindsym $mod+h split h
-
-# split in vertical orientation
 bindsym $mod+v split v
+# Horizontal split changed from the default H key in order to be able to change
+# move hotkeys to Vim style.
+bindsym $mod+g split h
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -190,3 +189,18 @@ client.background       #333333
 # different window and when the parent window loses focus, the Color Picker
 # window is destroyed.
 for_window [class="^vscode-color-ui$" title="^Color Picker$"] floating enable, move position mouse, focus
+
+# TODO: maybe switch to xfce4-session-logout commands instead
+# TODO: also check this: https://wiki.archlinux.org/index.php/I3#Shutdown.2C_reboot.2C_lock_screen
+mode  "(s)leep (h)ybernate (p)owersave (r)estart shut(d)own" {
+
+        bindsym s exec sudo pm-suspend; mode "default"
+        bindsym h exec sudo pm-hibernate; mode "default"
+        bindsym p exec sudo pm-powersave; mode "default"
+        bindsym d exec sudo 'shutdown -h now'; mode "default"
+        bindsym r exec sudo 'shutdown -r now'; mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+n mode "(s)leep (h)ybernate (p)owersave (r)estart shut(d)own"
